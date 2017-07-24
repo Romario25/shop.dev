@@ -7,7 +7,9 @@ return [
     ],
     'components' => [
         'cache' => [
-            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\caching\MemCache',
+            'useMemcached' => true
         ],
     ],
+    'bootstrap' => ['common\bootstrap\SetUp']
 ];
